@@ -10,7 +10,6 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '17'
-      - uses: android-actions/setup-android@v3
       - run: |
           yes | sdkmanager --licenses > /dev/null 2>&1 || true
           echo "sdk.dir=$ANDROID_HOME" > local.properties
